@@ -30,7 +30,7 @@ stepsperday <- tapply(data2$steps, data2$"date", sum)
 hist(stepsperday, xlab= "Steps", main="Histogram without NAs")
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ###Average daily activity pattern
 The mean and the median of the steps per dey are:
@@ -63,7 +63,7 @@ stepsinterval <- tapply(data2$steps, data2$"interval", mean)
         plot(stepsinterval, type="l", xlab="Interval", ylab="Average Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ```r
         which.max(stepsinterval)
@@ -113,7 +113,7 @@ head(newstepsperday)
 hist(newstepsperday, xlab="Steps per day", main="Histogram of steps per day without missing values")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 
 ### Differences between  weekdays and weekends.
@@ -166,7 +166,7 @@ with(stepsinterwd, plot(Interval, steps, main ="Weekdays", type = "l", ylim=c(0,
 with(stepsintwkd, plot(Interval, steps, main ="Weekends", type="l", ylim=c(0,220)))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 
 Therefore, according to this data, people walk more on weekdays than on weekends.
