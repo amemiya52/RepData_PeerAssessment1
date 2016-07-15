@@ -8,9 +8,6 @@ date: july 9th 2016
 
 First the data must be read.
 
-```r
-data1 <- read.csv("activity.csv")
-```
 
 
 Then, the data must be processed. In this case, the rows with NAs in the steps column were eliminated.
